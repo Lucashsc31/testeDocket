@@ -48,9 +48,9 @@ a {
 
 header{
     z-index: 2;
-    position: fixed;
+    position: absolute;
     height: 110px;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0px 0px 1px #666;
