@@ -7,76 +7,87 @@
     <title>Cartorios.com.vc</title>
     
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     
     <header>
-        <div class="size-container">
-            <figure class="logo"></figure>
+        <div class="size-content header-content">
+            <figure class="logo">
+                <img src="assets/logo.png" alt="Logo Cartorios.com.vc">
+            </figure>
             <menu>
                 <ul>
-                    <li>Home</li>
-                    <li>Nossas Soluções</li>
+                    <li>
+                        <a href="#home">Home</a> 
+                    </li>
+                    <li>
+                        <a href="#solucoes">Nossas Soluções</a>    
+                    </li>
                 </ul>
             </menu>
         </div>
     </header>
 
     <div class="container">
-
         <section id="home" class="slider">
-            
-            <div class="size-container">
-                <div class="slide">
-                    <div class="row">
-                        <div class="col-6"></div>
-                        <div class="col-6">
-                            <h1 class="slide-title">
-                                O frete é por nossa conta!
-                            </h1>
-                            <p class="slide-description">
-                                Segundas vias de certidões e buscas personalizadas de um jeito mais facil, rápido e seguro.float: left;
-                            </p>
-                            <div class="button">
-                                Solicite a 2 Via!
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="slide"></div>
-                <div class="slide"></div>
-            </div>
 
             <div class="controlers">
-                <div class="arrow-left"></div>
-                <div class="arrow-right"></div>
+                <div class="prev" onclick="plusSlides(-1)">
+                    <img src="assets/prev.png" alt="Anterior">
+                </div>
+                <div class="next" onclick="plusSlides(1)">
+                    <img src="assets/next.png" alt="Proximo">
+                </div>
                 <div class="counter">   
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </div>  
             </div>
-            
+
+            <span class="slides-box">
+                <div class="slide">
+                    <div class="size-content">
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <h1 class="slide-title">
+                                    O frete é por nossa conta!
+                                </h1>
+                                <p class="slide-description">
+                                    Segundas vias de certidões e buscas personalizadas de um jeito mais facil, rápido e seguro.
+                                </p>
+                                <div class="button">
+                                    Solicite a 2 Via!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </span>
         </section>
         
         <section id="solucoes">
-            <div class="size-container">
+            <div class="size-content">
                 <h1 class="section-title">
-                    Nossas Soluções!
+                    Nossas Soluções
                 </h1>
                 <div class="row">
                     <div class="col-4">
                         <div class="card">
-                            <div class="card-icon">
-
-                            </div>
+                            <figure class="card-icon card-nascimento"></figure>
                             <h2 class="card-title">
-                                2 Via Certidão de <span>Nascimento</span>
+                                2 Via Certidão de <br>
+                                <span>Nascimento</span>
                             </h2>
                             <p class="card-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos velit accusamus maxime alias non modi reprehenderit blanditiis debitis omnis, quas molestias molestiae? Fuga velit in aperiam, dicta dolor corporis expedita.
+                                Para solicitar uma segunda via de certidão de nascimento é muito simples! Primeiro, selecione o Estado e a Cidade em que a certidão original foi emitida, com essas informações ja podemos lhe dizer o Preço e o Prazo.
                             </p>
                             <div class="button">
                                 Solicite Agora! 
@@ -85,14 +96,13 @@
                     </div>
                     <div class="col-4">
                         <div class="card">
-                            <div class="card-icon">
-
-                            </div>
+                            <figure class="card-icon card-casamento"></figure>
                             <h2 class="card-title">
-                                2 Via Certidão de <span>Nascimento</span>
+                                2 Via Certidão de <br>
+                                <span>Casamento</span>
                             </h2>
                             <p class="card-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos velit accusamus maxime alias non modi reprehenderit blanditiis debitis omnis, quas molestias molestiae? Fuga velit in aperiam, dicta dolor corporis expedita.
+                                Para solicitar uma segunda via de certidão de casamento é muito simples! Primeiro, selecione o Estado e a Cidade em que a certidão original foi emitida, com essas informações ja podemos lhe dizer o Preço e o Prazo.
                             </p>
                             <div class="button">
                                 Solicite Agora! 
@@ -101,14 +111,13 @@
                     </div>
                     <div class="col-4">
                         <div class="card">
-                            <div class="card-icon">
-
-                            </div>
+                            <figure class="card-icon card-obito"></figure>
                             <h2 class="card-title">
-                                2 Via Certidão de <span>Nascimento</span>
+                                2 Via Certidão de <br>
+                                <span>Óbito</span>
                             </h2>
                             <p class="card-description">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos velit accusamus maxime alias non modi reprehenderit blanditiis debitis omnis, quas molestias molestiae? Fuga velit in aperiam, dicta dolor corporis expedita.
+                                Para solicitar uma segunda via de certidão de óbito é muito simples! Primeiro, selecione o Estado e a Cidade em que a certidão original foi emitida, com essas informações ja podemos lhe dizer o Preço e o Prazo.
                             </p>
                             <div class="button">
                                 Solicite Agora! 

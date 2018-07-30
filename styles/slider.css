@@ -1,6 +1,7 @@
 .slider{
     position: relative;
     height: calc(100vh - 110px);
+    color: #1980b6;
 }
 
 .slide{
@@ -9,6 +10,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 20px 15px;
+    
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
@@ -19,25 +22,34 @@
     background-image: url("../assets/banner.jpg");     
 }
 
-.slide:nth-child(2){
-    background-color: darkkhaki;
+/* .slide:nth-child(2){
+    
 }
 
 .slide:nth-child(3){
-    background-color: tomato;
+    
+} */
+
+.controlers{
+    z-index: 1;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
 }
   
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50vh;
-    transition: 0.6s ease;
+    top: calc(50vh - 75px);
 }
   
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
+
+.prev {
+    left: 0;
+} 
   
 .active{
     background-color: #717171;
@@ -59,4 +71,15 @@
     to {
       opacity: 1
     }
+}
+
+.slide-title{
+   font-size: 58pt;
+   font-weight: 700;
+   line-height: 1.1;
+}
+
+.slide-description{
+    font-size: 16pt;
+    line-height: 1.8;
 }
